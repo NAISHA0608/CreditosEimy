@@ -71,7 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="from-pink-400 via-pink-500 to-red-500 rounded-lg shadow-md p-8 flex flex-wrap">
         <div class="w-full md:w-1/2 p-4">
             <h2 class="text-4xl mb-6 text-center text-gray-800 font-bold">Calcular Precio de Electrodoméstico</h2>
-            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="space-y-4"  onsubmit="return validateForm()">
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="space-y-4"  onsubmit="return validateForm()" >
                 <div>
                     <label for="name" class="block text-gray-700">Nombre del Electrodoméstico</label>
                     <input type="text" id="name" name="name" class="mt-1 p-2 w-full border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent" required>
