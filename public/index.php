@@ -7,7 +7,7 @@
 </head>
 <body class="bg-pink-300 flex items-center justify-center min-h-screen">
     <div class="bg-white p-8 rounded shadow-md w-full max-w-md">
-        <h2 class="text-2xl mb-6 text-center">Calcular Precio de Electrodoméstico</h2>
+        <h2 class="text-4xl mb-6 text-center">Calcular Precio de Electrodoméstico</h2>
         <form action="index.php" method="post" onsubmit="return validateForm()">
             <div class="mb-4">
                 <label for="name" class="block text-gray-700">Nombre del Electrodoméstico</label>
@@ -33,7 +33,8 @@
                 <label for="weight" class="block text-gray-700">Peso (kg)</label>
                 <input type="text" id="weight" name="weight" class="mt-1 p-2 w-full border rounded" required>
             </div>
-            <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded">Calcular</button>
+            <button type="submit" class="w-full bg-red-500 text-white p-2 rounded">Calcular</button>
+            <br></br>
         </form>
         <?php
         function agregarProducto($nombre, $color, $consumo, $peso){
@@ -108,4 +109,5 @@
         ?>
     </div>
 </body>
+<script src="scripts.js"></script>
 </html>
