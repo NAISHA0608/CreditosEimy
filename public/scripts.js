@@ -1,3 +1,13 @@
+document.addEventListener("DOMContentLoaded", function() {
+    var formulario = document.getElementById("miFormulario");
+
+    formulario.addEventListener("submit", function(event) {
+        if (!validateForm()) {
+            event.preventDefault(); // Evita que el formulario se envíe si la validación falla
+        }
+    });
+});
+
 function validateForm() {
     const name = document.getElementById("name").value;
     const weight = document.getElementById("weight").value;
